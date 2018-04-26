@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Ft = styled.div`
-    background: black;
+    background: #1a1a1a;
     display: flex;
     padding: 10px;
 `;

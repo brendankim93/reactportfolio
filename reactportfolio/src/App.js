@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
+import Container from "./components/Container";
 
 const App = () => (
   <div>  
@@ -10,6 +11,8 @@ const App = () => (
     </Navbar>
       <Wrapper>
       </Wrapper>
+      <Container>
+      </Container>
     <Footer>
     </Footer>
   </div>
