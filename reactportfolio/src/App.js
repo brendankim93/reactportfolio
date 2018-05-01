@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
 import Container from "./components/Container";
+import SimpleSlider from "./components/SimpleSlider";
 
 const App = () => (
   <div>  
@@ -13,6 +14,8 @@ const App = () => (
       </Wrapper>
       <Container>
       </Container>
+      <SimpleSlider>
+      </SimpleSlider>
     <Footer>
     </Footer>
   </div>

@@ -5,6 +5,7 @@ const Ft = styled.div`
     background: #1a1a1a;
     display: flex;
     padding: 10px;
+    clear: left;
 `;
 
 const FtText = styled.h3`

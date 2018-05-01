@@ -12,7 +12,7 @@ const NavTitle = styled.h3`
     color: white;
     text-align: center;
     margin-left: 90px;
-    margin-right: 775px;
+    margin-right: 760px;
     letter-spacing: 2px;
     font-size: 22px;
 `;
@@ -22,17 +22,17 @@ const Links = styled.a`
     text-decoration: none;
     color: white;
     font-size: 16px;
-    padding-left: 30px;
+    padding-left: 15px;
     padding-top: 25px;
 `
 
 const Navbar = () => (
     <Nav>
         <NavTitle><i className="fa fa-code"></i> Brendan Kim</NavTitle>
-        <Links>About Me</Links>
-        <Links>Projects</Links>
-        <Links>Experience</Links>
-        <Links>Contact</Links>        
+        <Links><i className="fa fa-address-card"></i> About Me</Links>
+        <Links><i className="fa fa-book"></i> Portfolio</Links>
+        <Links><i className="fa fa-history"></i> Experience</Links>
+        <Links><i className="fa fa-phone-square"></i> Contact</Links>        
     </Nav>
 );
 

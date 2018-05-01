@@ -6,7 +6,7 @@ class Wrapper extends React.Component {
     render() {
     const Header = styled.div`
         background: linear-gradient(Aquamarine, LightCyan);
-        padding: 8.5em;
+        padding: 6em;
         `;
 
     const HeaderText = styled.h1`
@@ -30,6 +30,7 @@ class Wrapper extends React.Component {
         width: 15%;
         border-radius: 80%;
         opacity: 0.8;
+        margin-top: 120px;
     `;
 
       return (
