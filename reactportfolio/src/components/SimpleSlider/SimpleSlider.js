@@ -3,12 +3,13 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
+
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "lightgrey" }}
+      style={{ ...style, display: "block", background: "#ffe7b3" }}
       onClick={onClick}
     />
   );
@@ -19,7 +20,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "lightgrey" }}
+      style={{ ...style, display: "block", background: "#ffe7b3" }}
       onClick={onClick}
     />
   );
@@ -38,8 +39,8 @@ class SimpleSlider extends React.Component {
       };
 
       const Container2 = styled.div`
-        background: lightgrey;
-        padding 6em;
+        background: #ffe7b3;
+        padding 5.5em;
         margin-top: 50px; 
       `;
 
@@ -50,12 +51,12 @@ class SimpleSlider extends React.Component {
         font-weight: strong;
         text-align: center;
         border-style: solid;
-        border-width: 0px 0px 1px 0px;
+        border-width: 0px 0px 0.25px 0px;
         padding-bottom: 15px;
         width: 20%;
-        margin-left: 510px;
+        margin-left: 505px;
         margin-bottom: 50px;
-        margin-top: 50px;
+        margin-top: 30px;
         margin-bottom: 70px;
       `;
 
@@ -63,6 +64,18 @@ class SimpleSlider extends React.Component {
         margin-left: auto;
         margin-right: auto;
         display: block;
+        
+        &:hover {
+          background: lightgrey;
+        }
+      `;
+
+      const ImageText = styled.p`
+        font-family: 'Marvel', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        
       `;
 
       return (
@@ -74,10 +87,15 @@ class SimpleSlider extends React.Component {
           </Fade>
         <Slider {...settings}>
           <div>
-            <PortfolioImage src={require("../../assets/U-QueueInfo.png")} alt="U-Queue" />
+            <a href="https://brendankim93.github.io/U-QueueInfo/" target="_blank" rel="noopener noreferrer">
+              <PortfolioImage src={require("../../assets/U-QueueInfo.png")} alt="U-Queue" />
+            </a>
+            <ImageText>
+              <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/U-QueueInfo">here</a>!
+            </ImageText>
           </div>
           <div>
-            <h3>2</h3>
+            <PortfolioImage src={require("../../assets/APPetite.png")} alt="APPetite" />
           </div>
           <div>
             <h3>3</h3>

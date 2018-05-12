@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import Pulse from "react-reveal/Pulse";
 
 class Container extends React.Component {
     render () {
     const Container = styled.div`
         background: linear-gradient(LightCyan, white);
-        padding 8em;
+        padding 7em;
         margin-bottom: 80px;  
     `;
 
@@ -20,9 +21,9 @@ class Container extends React.Component {
         border-width: 0px 0px 1px 0px;
         padding-bottom: 15px;
         width: 20%;
-        margin-left: 485px;
+        margin-left: 470px;
         margin-bottom: 50px;
-        margin-top: 50px;
+        margin-top: 40px;
     `;
 
     const AboutImage = styled.img`
@@ -76,6 +77,7 @@ class Container extends React.Component {
                     Skill Set
                 </AboutTitle>
                 </Fade>
+                <Pulse>
                 <SkillsImages src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" />
                 <SkillsImages src="http://3.bp.blogspot.com/-1qRkTSa4CuY/U_S6btXbVAI/AAAAAAAAcng/7T3JGWfiml4/s1600/css3.png" />
                 <SkillsImages src="https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png" />
@@ -88,6 +90,7 @@ class Container extends React.Component {
                 <SkillsImages src="https://cdn-images-1.medium.com/max/1020/1*6bR8EymfDrVLb408TUNk-g.jpeg" />
                 <SkillsImages src="https://cdn-images-1.medium.com/max/960/1*pxfq-ikL8zPE3RyGB2xbng.png" />
                 <SkillsImages src="http://mean.io/wp-content/themes/twentysixteen-child/images/express.png" />
+                </Pulse>
             </Container>
         );
     }
