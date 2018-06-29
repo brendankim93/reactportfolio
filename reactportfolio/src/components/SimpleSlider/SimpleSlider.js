@@ -55,9 +55,8 @@ class SimpleSlider extends React.Component {
         padding-bottom: 15px;
         width: 20%;
         margin-left: 505px;
-        margin-bottom: 50px;
         margin-top: 30px;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
       `;
 
       const PortfolioImage = styled.img`
@@ -73,8 +72,9 @@ class SimpleSlider extends React.Component {
       const ImageText = styled.p`
         font-family: 'Marvel', sans-serif;
         font-size: 16px;
-        line-height: 1.6;
         text-align: center;
+        font-weight: bold;
+        word-spacing: 3px;
         
       `;
 
@@ -84,6 +84,9 @@ class SimpleSlider extends React.Component {
           <PortfolioTitle>
             Portfolio
           </PortfolioTitle>
+          <ImageText>
+            Please scroll through some of the projects I've been working on by using the arrows!
+          </ImageText>
           </Fade>
         <Slider {...settings}>
           <div>
@@ -91,23 +94,66 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/U-QueueInfo.png")} alt="U-Queue" />
             </a>
             <ImageText>
-              <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/U-QueueInfo">here</a>!
+              Waitlist Application Info Page - Role: Front-End/Marketing - Technologies Used: HTML, CSS (Materialize Framework)
+            </ImageText>
+            <ImageText>
+              <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/U-QueueInfo" target="_blank" rel="noopener noreferrer">here</a>!
             </ImageText>
           </div>
           <div>
-            <PortfolioImage src={require("../../assets/APPetite.png")} alt="APPetite" />
+            <a href="https://brendankim93.github.io/APPetite/" target="_blank" rel="noopener noreferrer">
+              <PortfolioImage src={require("../../assets/APPetite.png")} alt="APPetite" />
+            </a>
+            <ImageText>
+              Food Delivery and Reservation App - Role: Front-End - Technologies Used: HTML, CSS (Foundation Framework), Node.js, Express
+            </ImageText>
+            <ImageText>
+              <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/APPetite" target="_blank" rel="noopener noreferrer">here</a>!
+            </ImageText>
           </div>
           <div>
-            <h3>3</h3>
+            <a href="https://brendanmongoscraper.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <PortfolioImage src={require("../../assets/mongoscraper.png")} alt="Mongo News Scraper" />
+            </a>
+            <ImageText>
+              News Scraper App - Role: Full Stack - Technologies Used: HTML, CSS (Bootstrap), MongoDB, Node.js, Express
+            </ImageText>
+            <ImageText>
+              <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/NewsScraper" target="_blank" rel="noopener noreferrer">here</a>!
+            </ImageText>  
           </div>
           <div>
-            <h3>4</h3>
+            <a href="http://clickygamereact.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <PortfolioImage src={require("../../assets/clickygame.png")} alt="Adventure Time Clicky Game" />
+            </a>
+            <ImageText>
+              Clicky Memory Game App - Role: Full Stack - Technologies Used: HTML, CSS, React.js
+            </ImageText>
+            <ImageText>
+              <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/ClickyGame" target="_blank" rel="noopener noreferrer">here</a>!
+            </ImageText>
           </div>
           <div>
-            <h3>5</h3>
+            <a href="https://itsburgertime.herokuapp.com/burgers" target="_blank" rel="noopener noreferrer">
+              <PortfolioImage src={require("../../assets/burgertime.png")} alt="Burger Time App" />
+            </a>
+            <ImageText>
+              Burger Eating App - Role: Full Stack - Technologies Used: HTML, CSS, Handlebars.js, MySQL, Node.js, Express
+            </ImageText>
+            <ImageText>
+              <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/burger-" target="_blank" rel="noopener noreferrer">here</a>!
+            </ImageText>
           </div>
           <div>
-            <h3>6</h3>
+            <a href="https://coolphrasebro.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <PortfolioImage src={require("../../assets/coolphrasebro.png")} alt="Giphy API App" />
+            </a>
+            <ImageText>
+              Giphy API App - Role: Full Stack - Technologies Used: HTML, CSS, JQuery, Node.js, Express
+            </ImageText>
+            <ImageText>
+              <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/GiphyApp" target="_blank" rel="noopener noreferrer">here</a>!
+            </ImageText>
           </div>
         </Slider>
         </Container2>

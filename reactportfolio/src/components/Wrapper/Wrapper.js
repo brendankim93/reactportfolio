@@ -1,29 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-import Zoom from 'react-reveal/Zoom';
+import Jump from 'react-reveal/Jump';
 
 class Wrapper extends React.Component {
     render() {
     const Header = styled.div`
         background-color: black;
         background-image: url('https://orig00.deviantart.net/b3b6/f/2010/318/3/5/matrix_code_by_rashanta-d32tdoa.gif');
-        padding: 13em;
+        padding: 10em;
         `;
 
           
     const HeaderText = styled.h1`
-        font-family: 'Permanent Marker', cursive;
+        font-family: 'Libre Franklin', sans-serif;
         text-align: center;
-        font-size: 35px;
+        font-size: 50px;
         font-height: 5px;
-        -webkit-text-stroke: 1px black;
+
         color: white;
-        text-shadow:
-            3px 3px 0 #000,
-          -1px -1px 0 #000,  
-           1px -1px 0 #000,
-           -1px 1px 0 #000,
-            1px 1px 0 #000;
+        margin-bottom: 50px;
+
         `;
     // const MainImage = styled.img`
     //     display: block;
@@ -48,20 +44,20 @@ class Wrapper extends React.Component {
       return (
         <Header>
         <HeaderText>
-          <Zoom cascade duration={2000}>
-            Brendan Kim
-          </Zoom>
+          <Jump cascade duration={700}>
+            brendan kim
+          </Jump>
         </HeaderText>
         <HeaderText>
-          <Zoom cascade duration={2500}>
-            "Full Stack Web Developer"
-          </Zoom>
+          <Jump cascade duration={700}>
+            "full stack web developer"
+          </Jump>
         </HeaderText>
-        <Zoom cascade duration={2000}>
+        <Jump cascade duration={700}>
           <ImageDesc>
             Gif by <a href="https://rashanta.deviantart.com/" target="_blank" rel="noopener noreferrer">Rashanta</a>
           </ImageDesc>
-        </Zoom>
+        </Jump>
         </Header>
       );
     }
