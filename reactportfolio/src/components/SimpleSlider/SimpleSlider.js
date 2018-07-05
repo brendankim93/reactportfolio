@@ -94,7 +94,7 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/U-QueueInfo.png")} alt="U-Queue" />
             </a>
             <ImageText>
-              Waitlist Application Info Page - Role: Front-End/Marketing - Technologies Used: HTML, CSS (Materialize Framework)
+              Waitlist App Info Page - Role: Front-End/Marketing - Technologies Used: HTML, CSS (Materialize Framework)
             </ImageText>
             <ImageText>
               <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/U-QueueInfo" target="_blank" rel="noopener noreferrer">here</a>!
@@ -149,7 +149,7 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/coolphrasebro.png")} alt="Giphy API App" />
             </a>
             <ImageText>
-              Giphy API App - Role: Full Stack - Technologies Used: HTML, CSS, JQuery, Node.js, Express
+              Giphy API App - Role: Full Stack - Technologies Used: HTML, CSS, JQuery, Node.js, Express *Please allow the site to load unsafe scripts by clicking the shield on the address bar*
             </ImageText>
             <ImageText>
               <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/GiphyApp" target="_blank" rel="noopener noreferrer">here</a>!

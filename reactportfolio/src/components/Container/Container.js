@@ -58,7 +58,7 @@ class Container extends React.Component {
                     Who Is He?
                 </AboutTitle>
                 </Fade>
-                <AboutImage src="https://media.licdn.com/dms/image/C4D03AQFhvyhjIbpeUA/profile-displayphoto-shrink_200_200/0?e=1529233200&v=beta&t=Qct-zJAJROIlTMJooM-EQmJyk6UxiUWrVWC0P0AHYa4">
+                <AboutImage src={require("../../assets/profilepic.jpeg")} alt="Profile Pic">
                 </AboutImage>
                 <Fade left duration={1000}>
                 <AboutText>
@@ -78,18 +78,18 @@ class Container extends React.Component {
                 </AboutTitle>
                 </Fade>
                 <Pulse>
-                <SkillsImages src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" />
-                <SkillsImages src="http://3.bp.blogspot.com/-1qRkTSa4CuY/U_S6btXbVAI/AAAAAAAAcng/7T3JGWfiml4/s1600/css3.png" />
-                <SkillsImages src="https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png" />
-                <SkillsImages src="https://cdn-images-1.medium.com/max/1600/0*g3ns8QALNBBH7CBA." />
-                <SkillsImages src="https://i2.wp.com/www.damiencosset.com/wp-content/uploads/2017/07/mongodb.png?fit=413%2C484&ssl=1" />
-                <SkillsImages src="http://patjawat.com/files/global/logo/react.png" />
-                <SkillsImages src="https://static.memrise.com/img/400sqf/from/uploads/course_photos/3146044000171223183557.png" />
-                <SkillsImages src="https://www.mdslab.org/wp-content/uploads/2016/07/gitLogo.jpg" />
-                <SkillsImages src="https://cdn.tutsplus.com/net/uploads/2013/08/github-collab-retina-preview.gif" />
-                <SkillsImages src="https://cdn-images-1.medium.com/max/1020/1*6bR8EymfDrVLb408TUNk-g.jpeg" />
-                <SkillsImages src="https://cdn-images-1.medium.com/max/960/1*pxfq-ikL8zPE3RyGB2xbng.png" />
-                <SkillsImages src="http://mean.io/wp-content/themes/twentysixteen-child/images/express.png" />
+                <SkillsImages src={require("../../assets/html5.png")} alt="HTML5" />
+                <SkillsImages src={require("../../assets/css3.png")} alt="CSS3" />
+                <SkillsImages src={require("../../assets/bootstrap.png")} alt="Bootstrap" />
+                <SkillsImages src={require("../../assets/jquery.png")} alt="JQuery" />
+                <SkillsImages src={require("../../assets/mongodb.png")} alt="MongoDB" />
+                <SkillsImages src={require("../../assets/reactjs.png")} alt="ReactJS" />
+                <SkillsImages src={require("../../assets/javascript.png")} alt="Javascript" />
+                <SkillsImages src={require("../../assets/git.png")} alt="Git" />
+                <SkillsImages src={require("../../assets/github.png")} alt="GitHub" />
+                <SkillsImages src={require("../../assets/mysql.png")} alt="MySQL" />
+                <SkillsImages src={require("../../assets/nodejs.png")} alt="NodeJS" />
+                <SkillsImages src={require("../../assets/express.png")} alt="Express" />
                 </Pulse>
             </Container>
         );

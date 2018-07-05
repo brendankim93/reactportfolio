@@ -5,6 +5,7 @@ import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
 import Container from "./components/Container";
 import SimpleSlider from "./components/SimpleSlider";
+import Container2 from "./components/Container2";
 
 const App = () => (
   <div>  
@@ -16,6 +17,8 @@ const App = () => (
       </Container>
       <SimpleSlider>
       </SimpleSlider>
+      <Container2>
+      </Container2>
     <Footer>
     </Footer>
   </div>
