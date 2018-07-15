@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Ft = styled.div`
     background: black;
     display: flex;
-    padding: 10px;
+    padding: 30px;
     clear: left;
 `;
 
@@ -12,12 +12,12 @@ const FtText = styled.h3`
     font-family: Arial;
     color: white;
     font-size: 12px;
-    margin-left: 650px;
+    margin-left: 630px;
 `;
 
 const Footer = () => (
     <Ft>
-        <FtText>&copy; Brendan Kim</FtText>
+        <FtText>Brendan Kim 2018 &copy;</FtText>
     </Ft>
 );
 

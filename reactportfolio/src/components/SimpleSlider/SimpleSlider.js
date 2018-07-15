@@ -42,6 +42,7 @@ class SimpleSlider extends React.Component {
         background: #ffe7b3;
         padding 5.5em;
         margin-top: 50px; 
+        z-index: -1;
       `;
 
       const PortfolioTitle = styled.h1`
@@ -54,7 +55,7 @@ class SimpleSlider extends React.Component {
         border-width: 0px 0px 0.25px 0px;
         padding-bottom: 15px;
         width: 20%;
-        margin-left: 505px;
+        margin-left: 490px;
         margin-top: 30px;
         margin-bottom: 20px;
       `;
@@ -63,10 +64,7 @@ class SimpleSlider extends React.Component {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        
-        &:hover {
-          background: lightgrey;
-        }
+        z-index: -1;
       `;
 
       const ImageText = styled.p`
@@ -94,7 +92,7 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/U-QueueInfo.png")} alt="U-Queue" />
             </a>
             <ImageText>
-              Waitlist App Info Page - Role: Front-End/Marketing - Technologies Used: HTML, CSS (Materialize Framework)
+              Waitlist App Landing Page - Role: Front-End/Marketing - Technologies Used: HTML, CSS (Materialize Framework)
             </ImageText>
             <ImageText>
               <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/U-QueueInfo" target="_blank" rel="noopener noreferrer">here</a>!
@@ -105,7 +103,7 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/APPetite.png")} alt="APPetite" />
             </a>
             <ImageText>
-              Food Delivery and Reservation App - Role: Front-End - Technologies Used: HTML, CSS (Foundation Framework), Node.js, Express
+              Food Delivery and Reservation App - Role: Front-End and UX/UI - Technologies Used: HTML, CSS (Foundation Framework), Node.js, Express
             </ImageText>
             <ImageText>
               <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/APPetite" target="_blank" rel="noopener noreferrer">here</a>!

@@ -7,8 +7,13 @@ class Container extends React.Component {
     render () {
     const Container = styled.div`
         background: linear-gradient(LightCyan, white);
-        padding 7em;
-        margin-bottom: 80px;  
+        padding: 2em;  
+    `;
+
+    const SkillsContainer = styled.div`
+        background: white;
+        padding: 2em;
+        margin-bottom: 150px;
     `;
 
     const AboutTitle = styled.h1`
@@ -21,9 +26,9 @@ class Container extends React.Component {
         border-width: 0px 0px 1px 0px;
         padding-bottom: 15px;
         width: 20%;
-        margin-left: 470px;
-        margin-bottom: 50px;
-        margin-top: 40px;
+        margin-left: 540px;
+        margin-bottom: 60px;
+        margin-top: 60px;
     `;
 
     const AboutImage = styled.img`
@@ -43,16 +48,19 @@ class Container extends React.Component {
         line-height: 1.6;
         margin-left: 270px;
         margin-right: 200px;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
     `;
 
     const SkillsImages = styled.img`
         width: 10%;
         float: left;
+        position: relative;
+        z-index: -1;
     `;
 
         return (
-            <Container>
+            <div>
+                <Container>
                 <Fade left duration={1000}>
                 <AboutTitle>
                     Who Is He?
@@ -62,16 +70,20 @@ class Container extends React.Component {
                 </AboutImage>
                 <Fade left duration={1000}>
                 <AboutText>
-                        Bacon ipsum dolor amet venison leberkas buffalo pork picanha beef ribs swine tail tenderloin t-bone flank biltong landjaeger. Pancetta beef buffalo jerky burgdoggen short ribs shoulder porchetta drumstick landjaeger hamburger. Doner turkey beef tail sausage flank pork chop pork loin boudin turducken cupim. Porchetta sirloin tenderloin chuck kielbasa shoulder tongue ribeye chicken shankle salami. 
-                    Pancetta fatback chicken frankfurter, brisket ham hock pork doner short loin strip steak sausage tenderloin salami pig.
+                        Hi, I'm Brendan Kim. I am a Full-Stack Web Developer, but I prefer to work on Front-End Development. I like to mainly use React.js because I feel like it makes the coding process very efficient and there is so much you can do with it. I hope to specialize in React when working for a company. 
+                        HTML and CSS are my best friends, but I do occasionally use Boostrap and other CSS Frameworks when it is necessary. There is nothing like the feeling of accomplishment after you've finished creating a clean and visually appealing web page. That's what makes Web Development worth it for me! As a man of many talents, I like to use coding as a way to utilize my creativity and ingenuity.  
                 </AboutText>
                 </Fade>
                 <Fade left duration={1000}>
                 <AboutText>
-                        Strip steak shankle shoulder, bacon jowl porchetta salami chicken capicola turducken meatloaf andouille beef. Pig fatback tri-tip boudin, beef ribs spare ribs turkey t-bone filet mignon rump jowl. Flank t-bone beef cow jowl, shank frankfurter porchetta pork loin leberkas meatball ham. Meatball drumstick prosciutto picanha cupim, short ribs buffalo bacon ham capicola sausage brisket. 
-                    Andouille ground round doner meatball leberkas drumstick biltong pork, frankfurter short loin ham hock. Chuck chicken cupim, drumstick porchetta pancetta buffalo. Jowl corned beef picanha kevin, hamburger pork loin alcatra doner filet mignon andouille ham.
+                        Now let's talk about my background. I graduated from the University of California, Riverside with a degree in Media and Cultural Studies. After many years of studying how much media and technology affect society, I always knew that I would somehow end up in the tech industry. After slaving away at my sales job for a few months, I was fortunate enough to discover the world of coding. 
+                        I did my research on various languages and taught myself the basics of HTML and CSS. It wasn't completely foreign to me because prior to this I used to tinker with custom MySpace and Tumblr layouts back in the day. From there, I wanted to further my knowledge to become a Full-Stack Developer so I decided to sign with the UCI Coding Bootcamp where I gained the skills to build a complete
+                        web application from scratch. Upon receiving my certification, I have worked on passion projects and finished up this portfolio site! I am currently seeking a position as a Junior Web Developer where I can contribute to a growing business while gaining the skills of a professional coder. With a background in sales, my communication skills will allow me to become a great addition to a team of developers.
+                        Thanks for stopping by!
                 </AboutText>
                 </Fade>
+                </Container>
+                <SkillsContainer>
                 <Fade left duration={1000}>
                 <AboutTitle>
                     Skill Set
@@ -91,7 +103,8 @@ class Container extends React.Component {
                 <SkillsImages src={require("../../assets/nodejs.png")} alt="NodeJS" />
                 <SkillsImages src={require("../../assets/express.png")} alt="Express" />
                 </Pulse>
-            </Container>
+                </SkillsContainer>
+            </div>
         );
     }
 }

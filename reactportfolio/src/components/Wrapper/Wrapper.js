@@ -16,7 +16,6 @@ class Wrapper extends React.Component {
         text-align: center;
         font-size: 50px;
         font-height: 5px;
-
         color: white;
         margin-bottom: 50px;
 

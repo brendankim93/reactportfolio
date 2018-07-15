@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+
 const Nav = styled.div`
     display: flex;
     background-color: black;
@@ -24,12 +25,12 @@ const Links = styled.a`
     font-size: 16px;
     padding-left: 20px;
     padding-top: 25px;
-`
+`;
 
 const Navbar = () => (
     <Nav>
         <NavTitle><i className="fa fa-code"></i> Brendan Kim</NavTitle>
-        <Links><i className="fa fa-address-card"></i> About Me</Links>
+        <Links href="#about-me"><i className="fa fa-address-card"></i> About Me</Links>
         <Links><i className="fa fa-book"></i> Portfolio</Links>
         <Links><i className="fa fa-history"></i> Experience</Links>
         <Links><i className="fa fa-phone-square"></i> Contact</Links>        
