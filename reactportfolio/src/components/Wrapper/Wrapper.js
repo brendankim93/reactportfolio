@@ -20,15 +20,6 @@ class Wrapper extends React.Component {
         margin-bottom: 50px;
 
         `;
-    // const MainImage = styled.img`
-    //     display: block;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     width: 15%;
-    //     border-radius: 80%;
-    //     opacity: 0.8;
-    //     margin-top: 120px;
-    // `;
 
     const ImageDesc = styled.p`
       display: block;
