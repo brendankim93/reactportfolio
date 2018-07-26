@@ -2,18 +2,31 @@ import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import Pulse from "react-reveal/Pulse";
+import { device } from '../../media.js';
 
 class Container extends React.Component {
     render () {
     const Container = styled.div`
         background: linear-gradient(LightCyan, white);
         padding: 2em;  
+
+        @media ${device.iphone} {
+            max-width: 375px;
+            max-height: 900px;
+          }
     `;
 
     const SkillsContainer = styled.div`
         background: white;
         padding: 2em;
         margin-bottom: 150px;
+
+        @media ${device.iphone} {
+            padding: 2em;
+            margin-bottom: 50px;
+            max-width: 375px;
+            max-height: 900px;
+          }
     `;
 
     const AboutTitle = styled.h1`
@@ -29,6 +42,15 @@ class Container extends React.Component {
         margin-left: 540px;
         margin-bottom: 60px;
         margin-top: 60px;
+
+        @media ${device.iphone} {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 24px;
+            width: 30%;
+            margin-bottom: 30px;
+          }
     `;
 
     const AboutImage = styled.img`
@@ -39,6 +61,14 @@ class Container extends React.Component {
         float: left;
         margin-right: 40px;
         margin-bottom: 10px;
+
+        @media ${device.iphone} {
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+          }
     `;
 
     const AboutText = styled.p`
@@ -49,6 +79,15 @@ class Container extends React.Component {
         margin-left: 270px;
         margin-right: 200px;
         margin-bottom: 30px;
+
+        @media ${device.iphone} {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            font-size: 13px;
+            text-align: center;
+          }
     `;
 
     const SkillsImages = styled.img`
@@ -63,7 +102,7 @@ class Container extends React.Component {
                 <Container>
                 <Fade left duration={1000}>
                 <AboutTitle>
-                    Who Is He?
+                    About Me
                 </AboutTitle>
                 </Fade>
                 <AboutImage src={require("../../assets/profilepic.jpeg")} alt="Profile Pic">

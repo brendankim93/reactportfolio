@@ -1,12 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import { device } from "../../media.js";
 
 class Container2 extends React.Component {
     render() {
         const Container = styled.div`
         background: #f3ffcc;
-        padding 7em;
+        padding: 7em;
+        
+        @media ${device.iphone} {
+            max-width: 375px;
+            max-height: 920px;
+            padding: 1em;
+          }
         `;
 
         const ExperienceTitle = styled.h1`
@@ -21,12 +28,26 @@ class Container2 extends React.Component {
         margin-left: 470px;
         margin-bottom: 30px;
         margin-top: 10px;
+
+        @media ${device.iphone} {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+        width: 30%;
+        }
         `;
 
         const ResumeImage = styled.img`
         margin-left: auto;
         margin-right: auto;
         display: block;
+
+        @media ${device.iphone} {
+            width: 300px;
+            height: 350px;
+            margin-bottom: 30px;
+          }
         `;
 
         const ImageText = styled.p`
@@ -36,14 +57,18 @@ class Container2 extends React.Component {
         font-weight: bold;
         word-spacing: 3px;
         margin-bottom: 30px;
-        `
+        
+        @media ${device.iphone} {
+            font-size: 13px;
+          }
+        `;
     
 
     return (
         <Container>
             <Fade left duration={1000}>
             <ExperienceTitle>
-                My Experience
+                Experience
             </ExperienceTitle>
             </Fade>
             <Fade left duration={1000}>

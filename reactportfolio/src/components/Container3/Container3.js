@@ -1,12 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import { device } from "../../media.js";
 
 class Container3 extends React.Component {
     render() {
         const Container = styled.div`
         background: #ffbb99;
         padding 5em;
+        
+        @media ${device.iphone} {
+            max-width: 375px;
+            max-height: 500px;
+            padding: 2em;
+          }
         `;
         
         const ContactTitle = styled.h1`
@@ -21,6 +28,14 @@ class Container3 extends React.Component {
         margin-left: 520px;
         margin-bottom: 30px;
         margin-top: 10px;
+
+        @media ${device.iphone} {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 24px;
+            width: 30%;
+            }
         `;
 
         const ContactLinks = styled.a`
@@ -32,10 +47,27 @@ class Container3 extends React.Component {
         text-decoration: none;
         float: left;
         margin-left: 30px;
+
+        @media ${device.iphone} {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 24px;
+            padding-left: 20px;
+            }
         `;
 
         const ContactDiv = styled.div`
         margin-left: 480px;
+
+        @media ${device.iphone} {
+            max-width: 375px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 35px;
+            padding-bottom: 40px;
+            }
         `;
 
 

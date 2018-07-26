@@ -1,5 +1,5 @@
 import React from "react";
-//import { BrowserRouter as Router, Route } from "react-router-dom";
+import { device } from "./media.js";
 import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
 import Container from "./components/Container";
@@ -17,6 +17,10 @@ const Nav = styled.div`
     top: 0;
     width: 100%;
     z-index: 1;
+
+    @media ${device.iphone} {
+      max-width: 375px;
+      }
 `;
 
 const NavTitle = styled.h3`
@@ -28,6 +32,13 @@ const NavTitle = styled.h3`
     letter-spacing: 2px;
     font-size: 22px;
     cursor: crosshair;
+
+    @media ${device.iphone} {
+      font-size: 16px;
+      float: left;
+      margin-left: 20px;
+      margin-right: 10px;
+      }
 `;
 
 const Links = styled.a`
@@ -38,6 +49,14 @@ const Links = styled.a`
     padding-left: 20px;
     padding-top: 25px;
     cursor: crosshair;
+
+    @media ${device.iphone} {
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 25px;
+    padding-right: 10px;
+    float: left;
+      }
 `;
 
 function linkClickOne() {
@@ -51,12 +70,12 @@ function linkClickTwo() {
 }
 
 function linkClickThree() {
-  window.scrollTo(0, 2600);
+  window.scrollTo(0, 2700);
   console.log("scrolling experience");
 }
 
 function linkClickFour() {
-  window.scrollTo(0, 3300);
+  window.scrollTo(0, 3400);
   console.log("scrolling contact");
 }
 

@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import { device } from '../../media.js';
 
 
 function SampleNextArrow(props) {
@@ -40,9 +41,15 @@ class SimpleSlider extends React.Component {
 
       const Container2 = styled.div`
         background: #ffe7b3;
-        padding 5.5em;
+        padding: 5.5em;
         margin-top: 50px; 
         z-index: -1;
+
+        @media ${device.iphone} {
+          max-width: 375px;
+          max-height: 950px;
+          padding: 3em;
+        }
       `;
 
       const PortfolioTitle = styled.h1`
@@ -57,7 +64,16 @@ class SimpleSlider extends React.Component {
         width: 20%;
         margin-left: 490px;
         margin-top: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+
+        @media ${device.iphone} {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 24px;
+          width: 30%;
+          margin-bottom: 30px;
+        }
       `;
 
       const PortfolioImage = styled.img`
@@ -65,15 +81,22 @@ class SimpleSlider extends React.Component {
         margin-right: auto;
         display: block;
         z-index: -1;
+
+        @media ${device.iphone} {
+          height: 600px;
+        }
       `;
 
       const ImageText = styled.p`
         font-family: 'Marvel', sans-serif;
-        font-size: 16px;
+        font-size: 17px;
         text-align: center;
         font-weight: bold;
         word-spacing: 3px;
         
+        @media ${device.iphone} {
+          font-size: 13px;
+        }
       `;
 
       return (
@@ -82,9 +105,6 @@ class SimpleSlider extends React.Component {
           <PortfolioTitle>
             Portfolio
           </PortfolioTitle>
-          <ImageText>
-            Please scroll through some of the projects I've been working on by using the arrows!
-          </ImageText>
           </Fade>
         <Slider {...settings}>
           <div>
@@ -92,7 +112,13 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/U-QueueInfo.png")} alt="U-Queue" />
             </a>
             <ImageText>
-              Waitlist App Landing Page - Role: Front-End/Marketing - Technologies Used: HTML, CSS (Materialize Framework)
+              Waitlist App Landing Page 
+            </ImageText>
+            <ImageText>
+              Role: Front-End/Marketing
+            </ImageText>
+            <ImageText>
+              Technologies Used: HTML, CSS (Materialize Framework)
             </ImageText>
             <ImageText>
               <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/U-QueueInfo" target="_blank" rel="noopener noreferrer">here</a>!
@@ -103,7 +129,13 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/APPetite.png")} alt="APPetite" />
             </a>
             <ImageText>
-              Food Delivery and Reservation App - Role: Front-End and UX/UI - Technologies Used: HTML, CSS (Foundation Framework), Node.js, Express
+              Food Delivery and Reservation App
+            </ImageText>
+            <ImageText>
+              Role: Front-End and UX/UI
+            </ImageText>
+            <ImageText>
+              Technologies Used: HTML, CSS (Foundation Framework), Node.js, Express
             </ImageText>
             <ImageText>
               <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/APPetite" target="_blank" rel="noopener noreferrer">here</a>!
@@ -114,7 +146,13 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/mongoscraper.png")} alt="Mongo News Scraper" />
             </a>
             <ImageText>
-              News Scraper App - Role: Full Stack - Technologies Used: HTML, CSS (Bootstrap), MongoDB, Node.js, Express
+              News Scraper App 
+            </ImageText>
+            <ImageText>
+              Role: Full Stack
+            </ImageText>
+            <ImageText>
+              Technologies Used: HTML, CSS (Bootstrap), MongoDB, Node.js, Express
             </ImageText>
             <ImageText>
               <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/NewsScraper" target="_blank" rel="noopener noreferrer">here</a>!
@@ -125,7 +163,13 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/clickygame.png")} alt="Adventure Time Clicky Game" />
             </a>
             <ImageText>
-              Clicky Memory Game App - Role: Full Stack - Technologies Used: HTML, CSS, React.js
+              Clicky Memory Game App
+            </ImageText>
+            <ImageText>
+              Role: Full Stack
+            </ImageText>
+            <ImageText>
+              Technologies Used: HTML, CSS, React.js
             </ImageText>
             <ImageText>
               <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/ClickyGame" target="_blank" rel="noopener noreferrer">here</a>!
@@ -136,7 +180,13 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/burgertime.png")} alt="Burger Time App" />
             </a>
             <ImageText>
-              Burger Eating App - Role: Full Stack - Technologies Used: HTML, CSS, Handlebars.js, MySQL, Node.js, Express
+              Burger Eating App
+            </ImageText>
+            <ImageText>
+              Role: Full Stack
+            </ImageText>
+            <ImageText>
+              Technologies Used: HTML, CSS, Handlebars.js, MySQL, Node.js, Express
             </ImageText>
             <ImageText>
               <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/burger-" target="_blank" rel="noopener noreferrer">here</a>!
@@ -147,7 +197,13 @@ class SimpleSlider extends React.Component {
               <PortfolioImage src={require("../../assets/coolphrasebro.png")} alt="Giphy API App" />
             </a>
             <ImageText>
-              Giphy API App - Role: Full Stack - Technologies Used: HTML, CSS, JQuery, Node.js, Express *Please allow the site to load unsafe scripts by clicking the shield on the address bar*
+              Giphy API App
+            </ImageText>
+            <ImageText>
+              Role: Full Stack  
+            </ImageText>
+            <ImageText>
+              Technologies Used: HTML, CSS, JQuery, Node.js, Express *Please allow the site to load unsafe scripts by clicking the shield on the address bar*
             </ImageText>
             <ImageText>
               <i className="fa fa-image"></i> Click the image to view the live site or view the repository on Github <a href="https://github.com/brendankim93/GiphyApp" target="_blank" rel="noopener noreferrer">here</a>!
