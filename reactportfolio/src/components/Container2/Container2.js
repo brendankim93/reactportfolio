@@ -76,7 +76,7 @@ class Container2 extends React.Component {
             <i className="fa fa-image"></i> Click the image to view the full resume!
             </ImageText>
             </Fade>
-            <a href="https://drive.google.com/file/d/1uEMFfwetWnfg1hr3H28zr_1na2hE11Eh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1c7e8MIGl06n57kqUITwkbxVIEwIQgJhE/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <ResumeImage src={require("../../assets/ResumeScreenshot.png")} alt="Resume" />
             </a>
         </Container>
