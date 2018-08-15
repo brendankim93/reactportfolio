@@ -31,7 +31,11 @@ const NavTitle = styled.h3`
     margin-right: 760px;
     letter-spacing: 2px;
     font-size: 22px;
-    cursor: crosshair;
+    cursor: pointer;
+
+    &:hover {
+    font-weight: bold;
+    }
 
     @media ${device.iphone} {
       font-size: 16px;
@@ -48,7 +52,11 @@ const Links = styled.a`
     font-size: 16px;
     padding-left: 20px;
     padding-top: 25px;
-    cursor: crosshair;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: bold;
+    }
 
     @media ${device.iphone} {
     font-size: 13px;

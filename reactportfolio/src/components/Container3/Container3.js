@@ -48,6 +48,11 @@ class Container3 extends React.Component {
         float: left;
         margin-left: 30px;
 
+        &:hover {
+        font-weight: bold;
+        color: white;
+        }
+
         @media ${device.iphone} {
             display: block;
             margin-left: auto;
